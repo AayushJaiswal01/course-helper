@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext");
+
+.card {
+  padding: 0;
+  margin: 20px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.card>h2{
+    margin-top: 10px !important;
+    font-size: 2.5em;
+    color:#000 ;
+    margin-bottom: 10px !important;
+}
+.card>p{
+    font-size: 1em;
+    color: #19161c;
+}
+
+
+
+.card {
+  border-radius: 10px;
+  filter: drop-shadow(0 5px 10px 0 #ffffff);
+  width: 400px;
+  height: 180px;
+  background-color: #ffffff;
+  padding: 10px;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  transition: 0.6s ease-in;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -15px;
+  right: -15px;
+  background: #FEDE00;
+  height:220px;
+  width: 25px;
+  border-radius: 32px;
+  transform: scale(1);
+  transform-origin: 50% 50%;
+  transition: transform 0.25s ease-out;
+}
+
+.card:hover::before{
+    transition-delay:0.2s ;
+
+  transform: scale(40);
+}
+
+.card:hover{
+    color: #ffffff;
+
+}
+

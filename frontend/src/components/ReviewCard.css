@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Vollkorn&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+
+
+
+
+.l-card {
+	width: auto;
+	min-width: 360px;
+	max-width: 100%;
+	height: auto;
+	background: #3b3640;
+	color: #ffd52d;
+	padding: 50px;
+	box-shadow: 0px 7px 24px rgba(100, 100, 100, 0.4);
+    margin-bottom: 50px;
+}
+
+.l-card__text p {
+	font-size: 30px;
+	font-family: "Vollkorn", serif;
+	font-weight: 400;
+	color: #ffd52d;
+	text-align: left;
+}
+
+.l-card__text p::after {
+	content: "\201D";
+	display: inline;
+	color: #999;
+}
+
+.l-card__text p::before {
+	content: "\201C";
+	display: inline;
+	color: #999;
+}
+
+.l-card__user {
+	display: flex;
+	flex-direction: row;
+	padding-top: 24px;
+	margin-top: 12px;
+	 border-top: 1px solid #c1c1c1; 
+	align-items: center;
+}
+
+
+.l-card__userInfo {
+	display: flex;
+	flex-direction: column;
+	margin-left: 16px;
+}
+
+.l-card__userInfo span:nth-child(1) {
+	font-weight: bold;
+	font-family: sans-serif;
+	font-size: 14px;
+	color: #D9D55B;
+}
+.l-card__userInfo span:nth-child(2) {
+	color: #adada6;
+	font-family: sans-serif;
+	font-size: 12px;
+	margin-top: 2px;
+}
